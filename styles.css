@@ -37,13 +37,10 @@ body {
 .user-info h2 {
   font-size: 18px;
   margin-right: 10px;
+  position: relative;
+  top: -10px;
 }
 
-.pro-badge img {
-  width: 35px;
-  height: auto;
-		
-}
 
 .pro-badge {
   position: absolute; /* или absolute, если размещаете внутри какого-то контейнера */
@@ -52,8 +49,20 @@ body {
   z-index: 999; /* чтобы не скрывалась под другими элементами */
 }
 
+.pro-badge img {
+  width: 35px;
+  height: auto;
+  position: relative;
+  top: 79px;
+  right: -10px;
+}
+
+
+
 /* Строка поиска */
 .search-section {
+  position: relative;
+  top: -10px;
   padding: 16px;
   border-bottom: 1px solid #333;
 }
