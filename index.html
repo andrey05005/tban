@@ -1,104 +1,98 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Пример сайта</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #111;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            background-color: #FFD700;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .header .logo {
-            color: #111;
-            font-weight: bold;
-        }
-        .header .time {
-            font-size: 18px;
-        }
-        .menu {
-            display: flex;
-            justify-content: space-around;
-            background-color: #222;
-            padding: 10px;
-        }
-        .menu a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 20px;
-        }
-        .content .block {
-            background-color: #333;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 10px;
-            width: 22%;
-            text-align: center;
-        }
-        .content .block img {
-            width: 50px;
-            height: 50px;
-            margin-bottom: 10px;
-        }
-        .footer {
-            background-color: #222;
-            padding: 10px;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Клон интерфейса</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-    <div class="header">
-        <div class="logo">T-БАНК</div>
-        <div class="time">11:29</div>
-    </div>
+  <!-- Шапку убрали, как и просили, поэтому header не используем -->
 
-    <div class="menu">
-        <a href="#">Главная</a>
-        <a href="#">Платежи</a>
-        <a href="#">Город</a>
-        <a href="#">Чат</a>
+  <!-- Секция с именем пользователя -->
+  <section class="user-section">
+    <div class="avatar">A</div>
+    <div class="user-info">
+      <h2>Абдулхалык</h2>
+        <div class="pro-badge">
+		  <img src="icons/main.PRO.png" alt="PRO" />
+		</div>
     </div>
+  </section>
 
-    <div class="content">
-        <div class="block">
-            <img src="https://via.placeholder.com/50" alt="иконка">
-            <p>Ваш финансовый возраст</p>
-        </div>
-        <div class="block">
-            <img src="https://via.placeholder.com/50" alt="иконка">
-            <p>Ваш новый титул</p>
-        </div>
-        <div class="block">
-            <img src="https://via.placeholder.com/50" alt="иконка">
-            <p>Пополните ваш счет</p>
-        </div>
-        <div class="block">
-            <img src="https://via.placeholder.com/50" alt="иконка">
-            <p>Получите деньги</p>
-        </div>
-    </div>
 
-    <div class="footer">
-        <p>&copy; 2025 T-БАНК</p>
+  <!-- Строка поиска -->
+  <section class="search-section">
+    <input type="search" placeholder="Платежи" />
+  </section>
+
+  <!-- Контейнер с «карточками» (4 штуки, как на скриншоте) -->
+  <section class="cards-row">
+    <div class="card">
+      <p>Ваш<br>финансовый<br>возраст</p>
     </div>
+    <div class="card">
+      <p>Ваш новый титул</p>
+    </div>
+    <div class="card">
+      <p>Пополните ваш<br>счет для ИП</p>
+    </div>
+    <div class="card">
+      <p>Получите деньги<br>в «5 буквах»</p>
+    </div>
+  </section>
+
+  <!-- Блок с двумя «карточками» во весь экран: «Все операции» и «Кэшбэк и бонусы» -->
+  <section class="large-cards">
+    <div class="large-card">
+      <h3>Все операции</h3>
+      <p>Трат в апреле<br><strong>498 718 ₽</strong></p>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+    </div>
+    <div class="large-card">
+      <h3>Кэшбэк и бонусы</h3>
+      <!-- Иконки бонусных программ -->
+      <div class="icons-row">
+        <div class="icon-square">D</div>
+        <div class="icon-square">G</div>
+        <div class="icon-square">Z</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Блок кнопок («Перевести по телефону», «Пополнить Black», «Между счетами», «Сканировать QR-код») -->
+  <section class="buttons-row">
+    <div class="button-dark">Перевести по телефону</div>
+    <div class="button-dark">Пополнить Black</div>
+    <div class="button-dark">Между счетами</div>
+    <div class="button-dark">Сканировать QR-код</div>
+  </section>
+
+  <!-- Пример счета (0₽ Black) -->
+  <section class="account-card">
+    <h3>0 ₽</h3>
+    <p>Black</p>
+    <!-- Пример иконок карт -->
+    <div class="cards-icons">
+      <div class="card-icon">MC</div>
+      <div class="card-icon">МИР</div>
+      <div class="card-icon">МИР</div>
+      <div class="card-icon">МИР</div>
+    </div>
+    <div class="crown-badge">6 ₽</div>
+  </section>
+
+  <!-- Нижняя панель (Главная, Платежи, Город, Чат, Ещё) -->
+  <footer class="bottom-nav">
+    <div class="nav-item active">Главная</div>
+    <div class="nav-item">Платежи</div>
+    <div class="nav-item">Город</div>
+    <div class="nav-item">Чат</div>
+    <div class="nav-item">Ещё</div>
+  </footer>
 
 </body>
 </html>
