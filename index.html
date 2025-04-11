@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример сайта</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #FFD700;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo {
+            color: #111;
+            font-weight: bold;
+        }
+        .header .time {
+            font-size: 18px;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            background-color: #222;
+            padding: 10px;
+        }
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .content .block {
+            background-color: #333;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 22%;
+            text-align: center;
+        }
+        .content .block img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .footer {
+            background-color: #222;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">T-БАНК</div>
+        <div class="time">11:29</div>
+    </div>
+
+    <div class="menu">
+        <a href="#">Главная</a>
+        <a href="#">Платежи</a>
+        <a href="#">Город</a>
+        <a href="#">Чат</a>
+    </div>
+
+    <div class="content">
+        <div class="block">
+            <img src="https://via.placeholder.com/50" alt="иконка">
+            <p>Ваш финансовый возраст</p>
+        </div>
+        <div class="block">
+            <img src="https://via.placeholder.com/50" alt="иконка">
+            <p>Ваш новый титул</p>
+        </div>
+        <div class="block">
+            <img src="https://via.placeholder.com/50" alt="иконка">
+            <p>Пополните ваш счет</p>
+        </div>
+        <div class="block">
+            <img src="https://via.placeholder.com/50" alt="иконка">
+            <p>Получите деньги</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 T-БАНК</p>
+    </div>
+
+</body>
+</html>
